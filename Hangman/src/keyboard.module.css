@@ -1,0 +1,120 @@
+:root{
+    background-color: rgb(228, 228, 228);
+    --color-primary:rgb(0, 133, 27);
+    --color-primaryLight: rgb(103, 206, 123);
+    --color-primaryDark:rgb(34, 156, 1);
+
+    --color-Secondary:rgb(0, 77, 159);
+
+    --color-primaryText:rgb(0, 0, 0);
+    --color-secondayText:rgb(255, 255, 255);
+}
+
+.btn {
+    width: 100%;
+    border: 3px solid var(--color-primaryText);
+    background: none;
+    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5ren;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-primaryText);
+}
+
+.btn.active{
+    background-color:var(--color-primaryDark);
+    color: var(--color-secondayText);
+}
+
+.btn.inactive{
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled){
+    background-color: var(--color-primaryLight);
+}
+
+.restartButton {
+    height: 100px;
+    width: 600px;
+    background: var(--color-primary);
+    border-radius: 75px;
+    margin-top: 10px;
+    margin-Left: 100px;
+    font-size:3.5rem;
+    font-Weight: bold;
+    color: var(--color-secondayText);
+    border-color: var(--color-primaryText);
+    border-width: 0.4rem;
+    cursor: pointer;
+}
+
+.restartButton:hover {
+    height: 95px;
+    width: 570px;
+    font-size: 3rem;
+    margin-Left: 115px;
+    border-radius: 200px;
+    background: var(--color-Secondary);
+    transition: 1s;
+}
+
+
+
+.helpButton {
+    float: right;
+    height: 50px;
+    width: 50px;
+    background: var(--color-primary);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-Left: 40px;
+    font-size: 2rem;
+    font-Weight: bold;
+    color: var(--color-secondayText);
+    border-color: black;
+    border-width: 0.2rem;
+    cursor: pointer;
+}
+
+.helpButton:hover {
+    height: 50px;
+    width: 50px;
+    font-size: 2.5rem;
+    border-radius: 20px;
+    background: var(--color-Secondary);
+    transition: 0.7s;
+}
+
+.closeButton {
+    height: 60px;
+    width: 300px;
+    background: var(--color-primary);
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-Left: 0px;
+    font-size:2rem;
+    font-Weight: bold;
+    color: var(--color-secondayText);
+    border-color: var(--color-primaryText);
+    border-width: 0.4rem;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    height: 50px;
+    width: 275px;
+    border-radius: 20px;
+    background: var(--color-Secondary);
+    transition: 0.7s;
+}
+
+.darkmodeswitch{
+    float: right;
+    height: 100px;
+    width: 25px;
+    border-radius: 100px;
+}
